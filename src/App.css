@@ -1,38 +1,76 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+/* --- NavBar --- */
+
+.MuiIconButton-colorPrimary {
+  color: #FF8000 !important;
+}
+
+/* --- Body --- */
+
+.bodyBackground {
+
+}
+
+.bodyBackgroundImg {
+  width: 100%;
+  height: auto;
+  filter: grayscale();
+  
+}
+
+
+.bodyTitle {
+  text-align: center;
+  
+  color: orange;
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+
+  
+}
+
+/* --- Bottom of Body --- */
+
+.bottomBody {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description {
+ 
+  margin: 1rem;
+  color: orange;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --- Special --- */
+
+.MuiAccordionSummary-content{
+  flex-grow: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* --- Media Query --- */
+
+@media only screen and (min-width: 768px){
+  .bodyBackgroundImg {
+    height: 400px;
+    width: auto;
+    margin-top: 2rem;
+    border-radius: 30px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .bodyBackground{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .description {
+    width: 70%;
   }
 }
